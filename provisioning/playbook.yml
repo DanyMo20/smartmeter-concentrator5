@@ -96,7 +96,7 @@
   tasks: 
   - name: Clone gurux repository
     become: yes
-    git:
+    ansible.builtin.git:
        repo: https://github.com/DanyMo20/gurux.git
        dest: /home/ubuntu/repo
        clone: yes
@@ -115,7 +115,7 @@
   tasks: 
   - name: Clone gurux repository
     become: yes
-    git:
+    ansible.builtin.git:
        repo: https://github.com/DanyMo20/gurux.git
        dest: /home/ubuntu/repo
        clone: yes
